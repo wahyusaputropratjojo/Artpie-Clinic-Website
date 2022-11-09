@@ -7,7 +7,7 @@
 
 @layer components {
 	.mobile-navbar {
-		@apply font-poppins text-black text-[1.8rem] text-center bg-white flex flex-col items-center justify-center right-0 gap-[2rem] absolute w-8/12 h-[100vh] transition-all;
+		@apply font-poppins text-white text-[1.8rem] text-center bg-black flex flex-col items-center justify-center top-0 right-0 gap-[2rem] absolute w-full h-[100vh] transition-all;
 	}
 
 	.desktop-navbar {
