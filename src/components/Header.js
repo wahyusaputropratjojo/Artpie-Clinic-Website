@@ -73,13 +73,13 @@ const Header = () => {
 					{navbar ? (
 						<FontAwesomeIcon
 							onClick={handleNavbar}
-							className="h-10 md:hidden z-10 transition-all text-white"
+							className="h-8 md:hidden z-10 transition-all text-white"
 							icon={faXmark}
 						/>
 					) : (
 						<FontAwesomeIcon
 							onClick={handleNavbar}
-							className="h-10 md:hidden z-10 transition-all"
+							className="h-8 md:hidden z-10 transition-all"
 							icon={faBars}
 						/>
 					)}
