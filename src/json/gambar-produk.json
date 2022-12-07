@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "image": "images/produk/sepatu/sepatu-1.jpg"
+  },
+  {
+    "id": 2,
+    "image": "images/produk/sepatu/sepatu-2.jpg"
+  },
+  {
+    "id": 3,
+    "image": "images/produk/sepatu/sepatu-3.jpg"
+  },
+  {
+    "id": 4,
+    "image": "images/produk/sepatu/sepatu-4.jpg"
+  },
+  {
+    "id": 5,
+    "image": "images/produk/sepatu/sepatu-5.jpg"
+  },
+  {
+    "id": 6,
+    "image": "images/produk/sepatu/sepatu-6.jpg"
+  },
+  {
+    "id": 7,
+    "image": "images/produk/tas/tas-1.jpg"
+  },
+  {
+    "id": 8,
+    "image": "images/produk/tas/tas-2.jpg"
+  }
+]

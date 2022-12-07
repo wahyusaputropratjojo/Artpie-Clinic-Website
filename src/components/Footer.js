@@ -1,24 +1,16 @@
-import React from 'react';
-import { ReactComponent as ArtpieClinicLogoRemake } from '../assets/artpie-clinic-logo-remake.svg';
-import { ReactComponent as FacebookLogo } from '../assets/facebook-logo.svg';
-import { ReactComponent as InstagramLogo } from '../assets/instagram-logo.svg';
-import { ReactComponent as WhatsappLogo } from '../assets/whatsapp-logo.svg';
+import React from "react";
+import { ReactComponent as ArtpieClinicLogoWordmark } from "../assets/logo/artpie-clinic-logo.svg";
 
 const Footer = () => {
-	return (
-		<>
-			<footer>
-				<div className="flex items-center justify-between max-w-screen-lg mx-auto px-10 py-6 lg:px-0">
-					<ArtpieClinicLogoRemake className="w-[4rem] md:mx-0 md:w-[5rem] transition-all" />
-					<div className="flex gap-5">
-						<FacebookLogo className="h-[2rem] md:h-[2.5rem]" />
-						<InstagramLogo className="h-[2rem] md:h-[2.5rem]" />
-						<WhatsappLogo className="h-[2rem] md:h-[2.5rem]" />
-					</div>
-				</div>
-			</footer>
-		</>
-	);
+  return (
+    <>
+      <footer className="bg-color-2">
+        <div className="mx-auto flex max-w-screen-lg justify-center pt-[3rem]">
+          <ArtpieClinicLogoWordmark className="w-[20rem] rounded-t-2xl bg-color-1 fill-color-2 px-[5rem] py-[1.5rem] transition-all" />
+        </div>
+      </footer>
+    </>
+  );
 };
 
 export default Footer;

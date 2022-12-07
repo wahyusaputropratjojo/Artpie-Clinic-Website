@@ -1,0 +1,249 @@
+[
+	{
+		"id": 1,
+		"name": "Shoe Clean Treatment",
+		"tier": [
+			{
+				"id": 1,
+				"name": "Hypebeast",
+				"services": [
+					"Deep Treatment",
+					"Keseluruhan Sepatu",
+					"Premium Shoe Cleaner",
+					"Anti Odor & Bacterial",
+					"Water Repellent",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel", "Premium Package"],
+				"duration": 48,
+				"price": 99000
+			},
+			{
+				"id": 2,
+				"name": "Express",
+				"services": [
+					"First Priority Treatment",
+					"Keseluruhan Sepatu",
+					"Premium Shoe Cleaner",
+					"Anti Odor & Bacterial",
+					"Water Repellent",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel", "Premium Package"],
+				"duration": 6,
+				"price": 49000
+			},
+			{
+				"id": 3,
+				"name": "Premium",
+				"services": [
+					"Deep Treatment",
+					"Keseluruhan Sepatu",
+					"Premium Shoe Cleaner",
+					"Anti Odor & Bacterial",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel"],
+				"duration": 48,
+				"price": 39000
+			},
+			{
+				"id": 4,
+				"name": "Standard",
+				"services": [
+					"Fast Treatment",
+					"Upper & Midsole Sepatu",
+					"Shoe Cleaner",
+					"Anti Bacterial",
+					"Parfume"
+				],
+				"free": ["Silica Gel"],
+				"duration": 24,
+				"price": 29000
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Leather Shoe Treatment",
+		"tier": [
+			{
+				"id": 1,
+				"name": "Elegant",
+				"services": [
+					"Leather Deep Treatment",
+					"Keseluruhan Sepatu",
+					"Premium Leather Cleaner",
+					"Leather Lotion, Balsm & Shine",
+					"Anti Odor & Bacterial",
+					"Water Repellent",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel", "Premium Package"],
+				"duration": 48,
+				"price": 109000
+			},
+			{
+				"id": 2,
+				"name": "Express",
+				"services": [
+					"First Priority Treatment",
+					"Keseluruhan Sepatu",
+					"Premium Leather Cleaner",
+					"Leather Lotion, Balsm & Shine",
+					"Anti Odor & Bacterial",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel", "Premium Package"],
+				"duration": 4,
+				"price": 69000
+			},
+			{
+				"id": 3,
+				"name": "Premium",
+				"services": [
+					"Leather Deep Treatment",
+					"Keseluruhan Sepatu",
+					"Premium Leather Cleaner",
+					"Leather Lotion, Balsm & Shine",
+					"Anti Odor & Bacterial",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel"],
+				"duration": 48,
+				"price": 59000
+			},
+			{
+				"id": 4,
+				"name": "Standard",
+				"services": [
+					"Leather Fast Treatment",
+					"Upper & Midsole Sepatu",
+					"Leather Cleaner",
+					"Leather Lotion, Balsm & Shine",
+					"Anti Bacterial",
+					"Parfume"
+				],
+				"free": ["Silica Gel"],
+				"duration": 24,
+				"price": 49000
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Bag Clean Treatment",
+		"tier": [
+			{
+				"id": 1,
+				"name": "Hypebeast",
+				"services": [
+					"Deep Treatment",
+					"Keseluruhan Tas",
+					"Extra Protection",
+					"Premium Bag Cleaner",
+					"Anti Odor & Bacterial",
+					"Water Repellent",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel", "Premium Package"],
+				"duration": 72,
+				"price": 99000
+			},
+			{
+				"id": 2,
+				"name": "Express",
+				"services": [
+					"First Priority Treatment",
+					"Keseluruhan Tas",
+					"Extra Protection",
+					"Premium Bag Cleaner",
+					"Anti Odor & Bacterial",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel", "Premium Package"],
+				"duration": 24,
+				"price": 49000
+			},
+			{
+				"id": 3,
+				"name": "Premium",
+				"services": [
+					"Deep Treatment",
+					"Keseluruhan Tas",
+					"Premium Bag Cleaner",
+					"Anti Odor & Bacterial",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel"],
+				"duration": 72,
+				"price": 39000
+			},
+			{
+				"id": 4,
+				"name": "Standard",
+				"services": [
+					"Fast Treatment",
+					"Bagian Luar Tas",
+					"Bag Cleaner",
+					"Anti Bacterial",
+					"Parfume"
+				],
+				"free": ["Silica Gel"],
+				"duration": 48,
+				"price": 29000
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Leather Bag Treatment",
+		"tier": [
+			{
+				"id": 1,
+				"name": "Repair Protection",
+				"services": [
+					"Memperbaiki Kulit Tas Retak & Terkelupas",
+					"Leather Deep Treatment",
+					"Keseluruhan Tas",
+					"Extra Protection",
+					"Premium Bag Cleaner",
+					"Anti Odor & Bacterial",
+					"Water Repellent",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel", "Premium Package"],
+				"duration": 168,
+				"price": 149000
+			},
+			{
+				"id": 2,
+				"name": "Premium",
+				"services": [
+					"Leather Deep Treatment",
+					"Keseluruhan Tas",
+					"Premium Bag Cleaner",
+					"Anti Odor & Bacterial",
+					"Luxury Parfume"
+				],
+				"free": ["Silica Gel", "Premium Package"],
+				"duration": 72,
+				"price": 59000
+			},
+			{
+				"id": 3,
+				"name": "Standard",
+				"services": [
+					"Leather Fast Treatment",
+					"Bagian Luar Tas",
+					"Bag Cleaner",
+					"Anti Bacterial",
+					"Parfume"
+				],
+				"free": ["Silica Gel"],
+				"duration": 48,
+				"price": 49000
+			}
+		]
+	}
+]

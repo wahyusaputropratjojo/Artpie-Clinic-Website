@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	important: true,
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
 			colors: {
-				'color-1': '#272c48',
-				'color-2': '#fe6b02',
-				'color-3': '#52566d',
+				'color-1': '#d9f24f',
+				'color-2': '#1f1f1f',
 			},
 			fontFamily: {
-				bebasneue: 'Bebas Neue',
-				poppins: 'Poppins',
+				'fivo-sans': 'Fivo Sans',
+				'versus-ultra': 'Versus Ultra',
 			},
 		},
 	},

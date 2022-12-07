@@ -2,16 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@layer base {
+	@font-face {
+		font-family: 'Fivo Sans';
+		font-weight: 500;
+		src: url('/public/fonts/fivo-sans/fivo-sans-medium-500.otf')
+			format('opentype');
+	}
+
+	@font-face {
+		font-family: 'Versus Ultra';
+		font-weight: 900;
+		src: url('/public/fonts/versus/versus-ultra-900.otf') format('opentype');
+	}
+}
 
 @layer components {
 	.mobile-navbar {
-		@apply font-poppins text-white text-[1.8rem] text-center bg-black flex flex-col items-center justify-center top-0 right-0 gap-[2rem] absolute w-full h-[100vh] transition-all;
+		@apply absolute top-0 right-0 flex h-[100vh] w-full flex-col items-center justify-center gap-[2rem] bg-black text-center font-fivo-sans text-[1.8rem] text-white transition-all;
 	}
 
 	.desktop-navbar {
-		@apply font-poppins hidden gap-5 md:flex text-[1.6rem] transition-all;
+		@apply hidden gap-[3rem] font-fivo-sans text-[1.6rem] transition-all md:flex;
+	}
+
+	.h1-fluid-text {
+		font-size: clamp(2rem, 0.9157rem + 3.012vw, 4rem);
+	}
+
+	.content-1-fluid-text {
+		font-size: clamp(1.4rem, 1.2916rem + 0.3012vw, 1.6rem);
+	}
+
+	.content-2-fluid-text {
+		font-size: clamp(1.2rem, 1.0916rem + 0.3012vw, 1.4rem);
+	}
+
+	.h2-fluid-text {
+		font-size: clamp(2rem, 0.3735rem + 4.5181vw, 5rem);
+	}
+
+	.fluid-text__p-3-6 {
+		font-size: clamp(3rem, 1.3735rem + 4.5181vw, 6rem);
 	}
 }
 

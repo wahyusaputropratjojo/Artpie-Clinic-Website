@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { ReactComponent as ArtpieClinicLogoRemake } from '../assets/artpie-clinic-logo-remake.svg';
+import { ReactComponent as ArtpieClinicLogoWordmark } from '../assets/logo/artpie-clinic-logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Header = () => {
 	const [navbar, setNavbar] = useState(false);
@@ -11,6 +11,8 @@ const Header = () => {
 		width: undefined,
 		height: undefined,
 	});
+
+	const [scrollHeader, setScrollHeader] = useState(true);
 
 	const handleNavbar = () => {
 		setNavbar((p) => !p);
@@ -23,6 +25,16 @@ const Header = () => {
 			setNavbar(false);
 		}
 	};
+
+	const handleScrollHeader = () => {
+		if (window.scrollY >= 50) {
+			setScrollHeader(false);
+		} else {
+			setScrollHeader(true);
+		}
+	};
+
+	window.addEventListener('scroll', handleScrollHeader);
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -43,28 +55,66 @@ const Header = () => {
 
 	return (
 		<>
-			<header>
-				<div className="px-10 py-6 lg:px-0 mx-auto my-0 max-w-screen-lg flex justify-between items-center">
-					<ArtpieClinicLogoRemake className="w-[4rem] mx-auto md:mx-0 md:w-[5rem] transition-all" />
-					<nav>
+			<header className="fixed z-50 w-full bg-color-2 transition-all">
+				<div className="mx-auto my-0 flex max-w-screen-lg items-center justify-between px-10 py-8 lg:px-0">
+					<Link
+						className="cursor-pointer"
+						onClick={handleNavbarMobile}
+						to="Hero"
+						spy={true}
+						smooth={true}
+						duration={800}>
+						<ArtpieClinicLogoWordmark
+							className={
+								scrollHeader
+									? 'z-50 mx-auto w-[10rem] fill-white transition-all md:mx-0'
+									: 'z-50 mx-auto w-[7rem] fill-white transition-all md:mx-0'
+							}
+						/>
+					</Link>
+					<nav className="z-50 font-medium uppercase text-white">
 						<ul className={navbar ? 'mobile-navbar' : 'desktop-navbar'}>
 							<li>
-								<Link onClick={handleNavbarMobile} to="/">
-									Beranda
+								<Link
+									className="cursor-pointer"
+									onClick={handleNavbarMobile}
+									to="Galeri"
+									spy={true}
+									smooth={true}
+									duration={800}>
+									Galeri
 								</Link>
 							</li>
 							<li>
-								<Link onClick={handleNavbarMobile} to="/layanan">
+								<Link
+									className="cursor-pointer"
+									onClick={handleNavbarMobile}
+									to="Layanan"
+									spy={true}
+									smooth={true}
+									duration={800}>
 									Layanan
 								</Link>
 							</li>
 							<li>
-								<Link onClick={handleNavbarMobile} to="/lokasi">
+								<Link
+									className="cursor-pointer"
+									onClick={handleNavbarMobile}
+									to="Lokasi"
+									spy={true}
+									smooth={true}
+									duration={800}>
 									Lokasi
 								</Link>
 							</li>
 							<li>
-								<Link onClick={handleNavbarMobile} to="/tentang">
+								<Link
+									className="cursor-pointer"
+									onClick={handleNavbarMobile}
+									to="Tentang"
+									spy={true}
+									smooth={true}
+									duration={800}>
 									Tentang
 								</Link>
 							</li>
@@ -73,13 +123,13 @@ const Header = () => {
 					{navbar ? (
 						<FontAwesomeIcon
 							onClick={handleNavbar}
-							className="h-8 md:hidden z-10 transition-all text-white"
+							className="z-50 h-8 text-white transition-all md:hidden"
 							icon={faXmark}
 						/>
 					) : (
 						<FontAwesomeIcon
 							onClick={handleNavbar}
-							className="h-8 md:hidden z-10 transition-all"
+							className="z-50 h-8 text-white transition-all md:hidden"
 							icon={faBars}
 						/>
 					)}
